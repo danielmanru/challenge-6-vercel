@@ -1,0 +1,386 @@
+{
+    "item": [{
+        "id": "fcd2c791-37fa-4434-b70d-a0fcfaaa6252",
+        "name": "Login user",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["user", "auth", "login"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "POST",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"username\":\"daniel10\",\"password\":\"password123\"}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "07520b56-1488-4b5c-8151-45c0fe1694a4",
+        "name": "Register User Game",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["user", "auth", "register"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "POST",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"username\":\"daniel10\",\"password\":\"password123\"}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "d9ddd411-4df7-49a0-9959-91157c332c54",
+        "name": "Change password user",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["user", "auth", "changepassword"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "PUT",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"oldPassword\":\"password321\",\"newPassword\":\"password123\",\"confirmNewPassword\":\"password123\"}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "6b22286e-7e91-4879-b004-06755173ea66",
+        "name": "Delete user",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["user", "auth", "deleteuser"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "DELETE"
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "9734f342-db01-4831-9363-de9a64ee018f",
+        "name": "Create user game biodata",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["bio", "createBio"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "POST",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"name\":\"dimas\",\"gender\":\"male\",\"region\":\"indonesia\",\"phone\":\"082334354556\"}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "aecb529e-d87e-4112-a0b7-d3a90197bc27",
+        "name": "detail user game biodata",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["bio", "userBio", ""],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "GET"
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "93691cd7-8464-4d5a-b877-34a4fca1a269",
+        "name": "Update Biodata",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["bio", "updateBio", ""],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "PUT",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"name\":\"jasmine\",\"gender\":\"female\",\"region\":\"egypt\",\"phone\":\"083293847584\"}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "f1c8449b-dcf0-4035-9b7d-40e71d538d86",
+        "name": "Update one of user biodata's data ",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["bio", "updateBio", ""],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "PUT",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"name\":\"dimas G\"}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "143bc1fb-93c0-4a4f-b8b5-11a7f3e26c2c",
+        "name": "Delete user game biodata",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["bio", "deleteBio", ""],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "DELETE"
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "2156965d-3961-4583-bde3-f3bb1137c7d5",
+        "name": "Create new user game history",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["history", "createHistory"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "POST",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"date\":\"2022-09-27\",\"time\":\"16:15:25\",\"score\":50}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "8b758370-6435-4174-9f70-2cf951dac83e",
+        "name": "Show game history of user ",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["history", "showHistory", ""],
+                "host": ["localhost"],
+                "query": [],
+                "variable": []
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "GET"
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "187feef9-2937-47a9-bf4d-7213a8d70b7f",
+        "name": "Update User History",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["history", "updateHistory", ":historyId"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": [{
+                    "type": "any",
+                    "key": "historyId"
+                }]
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "PUT",
+            "body": {
+                "mode": "raw",
+                "raw": "{\"date\":\"2022-09-25\",\"time\":\"14:14:26\",\"score\":70}"
+            }
+        },
+        "response": [],
+        "event": []
+    }, {
+        "id": "a64dc4e4-5370-4a96-bba4-c35527017cf6",
+        "name": "Delete User History",
+        "request": {
+            "url": {
+                "protocol": "http",
+                "port": "3000",
+                "path": ["deleteHistory", ":historyId"],
+                "host": ["localhost"],
+                "query": [],
+                "variable": [{
+                    "type": "any",
+                    "key": "historyId"
+                }]
+            },
+            "header": [{
+                "key": "Content-type",
+                "value": "application/json"
+            }, {
+                "key": "Authorization",
+                "value": ""
+            }, {
+                "key": "cache-control",
+                "value": "no-cache"
+            }],
+            "method": "DELETE"
+        },
+        "response": [],
+        "event": []
+    }],
+    "event": [],
+    "variable": [],
+    "info": {
+        "_postman_id": "da62df8f-fd5c-46b8-b0b1-6a9aa327a28a",
+        "name": "Challenge-4 API Documentation",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+}
